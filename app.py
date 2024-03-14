@@ -2,7 +2,7 @@ from flask import Flask, jsonify, render_template
 from ultralytics import YOLO
 import cv2
 import math
-import pyttsx3
+
 
 app = Flask(__name__)
 
@@ -32,7 +32,7 @@ for name in classNames:
     Dict[name] = ind
     ind = ind + 1
 
-engine = pyttsx3.init()
+
 
 prediction_result = None
 
