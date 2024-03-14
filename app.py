@@ -36,9 +36,9 @@ for name in classNames:
 
 prediction_result = None
 
-# @app.route('/')
-# def index():
-#     return render_template('index.html')
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/detect', methods=['GET'])
 def object_detection():
